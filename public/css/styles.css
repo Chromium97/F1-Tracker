@@ -1,0 +1,86 @@
+body{
+    background-color: #000E22;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-container{
+    display: flex;
+}
+
+
+.races{
+    color: #000E22;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #CCCCCC;
+    margin:auto;
+}
+
+.driverStandings{
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.red_bull{
+    background-image: linear-gradient(60deg, #FF004C, #00174C);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.aston_martin{
+    background-image: linear-gradient(60deg, #00665E, #CEDC00);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.mercedes{
+    background-image: linear-gradient(60deg, #00A19C, #C6C6C6);
+    color: #111111;
+    border-color: #CCCCCC;
+}
+
+.ferrari{
+    background-image: linear-gradient(60deg, #A6051a, #FFEB00);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.alpine{
+    background-image: linear-gradient(60deg, #005BA9, #FD4BC7);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.mclaren{
+    background-image: linear-gradient(60deg, #FF8000, #47C7FC);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.alphatauri{
+    background-image: linear-gradient(60deg, #041F3D, #011321);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.alfa{
+    background-image: linear-gradient(60deg, #A50F2D, #000E22);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.williams{
+    background-image: linear-gradient(60deg, #00A3E0, #041E42);
+    color: white;
+    border-color: #CCCCCC;
+}
+
+.haas{
+    background-image: linear-gradient(60deg, #EFEFEF, #DA291C);
+    color: #111111;
+    border-color: #CCCCCC;
+}

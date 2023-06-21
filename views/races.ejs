@@ -1,0 +1,17 @@
+<%- include('./partials/header'); -%>
+
+<h1>Formula 1 Schedule</h1>
+<br>
+
+    <%  for(let race of races){ %>
+      <div class="row d-flex justify-content-center g-2 ">
+      <a href="/raceResults/<%=race.round %>">
+        <div class="col-md-8 text-center races shadow p-3 mb-5 bg-white rounded">
+              <h1> <%=race.round %> - <%=race.raceName %></h1>
+          </div>
+          </a>
+      </div>
+      <% } %>
+
+
+<%- include('./partials/footer'); -%>

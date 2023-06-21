@@ -1,0 +1,18 @@
+<%- include('./partials/header'); -%>
+
+<h1>Drivers Standings</h1>
+<br>
+
+<div class="row justify-content-between g-2 ">
+  <%  for(let drive of drivers){ %>
+          <div class="col-md-6 ms-auto text-center driverStandings shadow p-3 mb-5 bg-white rounded <%=drive.Constructors[0].constructorId %>">
+            <h1> <%=drive.Driver.givenName %>  <%=drive.Driver.familyName %></h1>
+            <h2><%=drive.points %></h2>
+            
+            <h2> <%=drive.Constructors[0].name %></h2>
+        </div>
+    <% } %>
+</div>
+
+
+<%- include('./partials/footer'); -%>

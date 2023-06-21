@@ -1,0 +1,16 @@
+<%- include('./partials/header'); -%>
+
+<h1>Constructors Standings</h1>
+<br>
+
+<div class="row justify-content-between g-2 ">
+  <%  for(let constructor of constructors){ %>
+          <div class="col-md-6 ms-auto text-center driverStandings shadow p-3 mb-5 bg-white rounded <%=constructor.Constructor.constructorId %>">
+            <h1> <%=constructor.position %> - <%=constructor.Constructor.name %></h1>
+            <h2><%=constructor.points %></h2>
+        </div>
+    <% } %>
+</div>
+
+
+<%- include('./partials/footer'); -%>

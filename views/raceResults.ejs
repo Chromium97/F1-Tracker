@@ -1,0 +1,20 @@
+<%- include('./partials/header'); -%>
+
+<h1><%= raceTitle %> Results</h1>
+<br>
+
+
+    <%  for(let result of results){ %>
+        <div class="row d-flex justify-content-center g-2 ">
+            <div class="col-md-8 text-center races shadow p-3 mb-5 bg-white rounded <%=result.Constructor.constructorId%>">
+              <h1><%=result.position %> <%=result.Driver.givenName %> <%=result.Driver.familyName %></h1>
+              <h2><%=result.Constructor.name %></h2>
+              <h3>Classification:<%=result.Time?.time ?? "DNF" %></h3>
+              <h3>Average Race Speed: <%=result.FastestLap?.AverageSpeed.speed ?? "N/A" %> kph</h3>
+              <h4>Fastest Lap:<%=result.FastestLap?.Time.time %></h4>
+       
+            </div>
+        </div>
+      <% } %>
+
+<%- include('./partials/footer'); -%>
